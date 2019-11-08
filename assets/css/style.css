@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #f2f2f2;
+}
+
+header nav:last-child,
+header nav:last-child ul {
+  display: flex;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+.max {
+  width: 70%;
+  font-family: 'Rajdhani', sans-serif;
+  color: #f42;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.small {
+  width: 30%;
+}
+
+.min {
+  width: 15%;
+}
+
+.white {
+  background: white;
+}
+
+.border img {
+  width: 18px;
+  height: 18px;
+}
+
+.ham img {
+  width: 25px;
+  height: 20px;
+}
+
+.border {
+  border-left: 1px solid rgb(197, 190, 190);
+  border-right: 1px solid rgb(197, 190, 190);
+}
+
+.max,
+.min {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide-mobile,
+.hide-clock {
+  display: none;
+}
+
+.extend-mob {
+  width: 80%;
+  justify-content: space-between;
+}
+
+.mobile-logo {
+  background-color: #f42;
+  background: linear-gradient(to bottom right, #c09, #f42 85%);
+  display: block;
+  height: 48px;
+  padding: 16px 20px;
+  width: 106px;
+  will-change: height;
+}
+
+header nav:last-child {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 480px) {
+  .remove-center {
+    visibility: hidden;
+    width: 25%;
+    height: 20px;
+  }
+
+  .show-clock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 45%;
+    font-family: Rajdhani, sans-serif;
+    color: #f42;
+    font-size: 22px;
+    font-weight: 700;
+  }
+}
