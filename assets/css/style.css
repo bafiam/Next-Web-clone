@@ -19,7 +19,7 @@ header nav ul li {
 
 .max {
   width: 70%;
-  font-family: 'Rajdhani', sans-serif;
+  font-family: "Rajdhani", sans-serif;
   color: #f42;
   font-size: 22px;
   font-weight: 700;
@@ -103,5 +103,107 @@ header nav:last-child {
     color: #f42;
     font-size: 22px;
     font-weight: 700;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1182px) {
+  .hide-mobile,
+  .hide-clock {
+    display: block;
+  }
+
+  .remove-center {
+    visibility: hidden;
+    width: 25%;
+    height: 20px;
+  }
+
+  header nav:first-child {
+    display: flex;
+    background-color: black;
+    width: 90%;
+    margin-left: 10%;
+    height: 30px;
+    padding: 0 20px;
+  }
+
+  header nav:last-child {
+    position: static;
+  }
+
+  .show-clock {
+    width: 87%;
+    font-family: Rajdhani, sans-serif;
+    color: #f42;
+    font-size: 22px;
+    font-weight: 700;
+    padding-top: 10px;
+    padding-left: 5px;
+  }
+
+  .header-nav-list {
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .header-nav-ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .header-nav-ul:first-child {
+    width: 60%;
+  }
+
+  .header-nav-ul:last-child {
+    width: 30%;
+    margin-left: 70px;
+  }
+
+  .header-nav-2-list-hide {
+    display: none;
+  }
+
+  .header-nav-2-list {
+    color: rgb(85, 85, 85);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 14px;
+    text-transform: uppercase;
+    text-decoration-color: rgb(170, 170, 170);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .white {
+    display: flex;
+    height: 48px;
+    justify-content: center;
+    width: 90%;
+    margin-left: 10%;
+  }
+
+  .white > ul:first-child {
+    width: 65%;
+  }
+
+  .white > ul:last-child {
+    width: 35%;
+  }
+
+  .mobile-logo {
+    width: 10%;
+    position: absolute;
+    top: 0;
+    height: 75px;
+    left: 0;
   }
 }
