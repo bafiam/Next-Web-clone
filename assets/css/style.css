@@ -1,7 +1,30 @@
+@font-face {
+  font-family: 'Avalon';
+  src: url('../fonts/avalon-bold.eot');
+  src:
+    local(':relaxed:'),
+    url('../fonts/avalon-bold.woff2') format('woff');
+}
+
+@font-face {
+  font-family: "Shentox";
+  src: url("../fonts/shentox-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: 'Marquette-Regular';
+  src: url('../fonts/ars-maquette-regular.eot');
+  src:
+    local(':relaxed:'),
+    url('../fonts/ars-maquette-regular.woff') format('woff');
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Marquette-Regular, sans-serif;
+  font-weight: 100;
 }
 
 body {
@@ -19,7 +42,7 @@ header nav ul li {
 
 .max {
   width: 70%;
-  font-family: "Rajdhani", sans-serif;
+  font-family: Shentox, sans-serif;
   color: #f42;
   font-size: 22px;
   font-weight: 700;
@@ -98,11 +121,11 @@ header nav:last-child {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 45%;
-    font-family: Rajdhani, sans-serif;
+    font-family: Shentox, sans-serif;
     color: #f42;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 700;
+    margin-right: 10px;
   }
 }
 
@@ -127,18 +150,23 @@ header nav:last-child {
     padding: 0 20px;
   }
 
+  header nav:last-child ul:first-child li {
+    font-size: 14px;
+    font-family: Shentox, sans-serif;
+    color: #aaa;
+  }
+
   header nav:last-child {
     position: static;
     width: 90%;
     margin-left: 10%;
     padding: 10px 0;
-    font-family: Rajdhani, sans-serif;
+    font-family: Shentox, sans-serif;
   }
 
   .show-clock {
-    width: 84%;
     color: #f42;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 700;
     padding-top: 2px;
     padding-left: 8px;
@@ -150,7 +178,6 @@ header nav:last-child {
 
   .header-nav-list {
     color: rgb(255, 255, 255);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 13px;
     font-weight: 500;
     line-height: 32px;
@@ -177,7 +204,6 @@ header nav:last-child {
 
   .header-nav-2-list {
     color: rgb(85, 85, 85);
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 14px;
@@ -202,6 +228,184 @@ header nav:last-child {
     width: 10%;
     position: absolute;
     top: 0;
+    height: 74px;
+    left: 0;
+  }
+
+  .mobile-logo img {
+    width: 100%;
+    margin: 13px auto;
+  }
+
+  .border {
+    border-right: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 837px) {
+  header nav:last-child ul:first-child li {
+    font-size: 14px;
+    font-family: Shentox, sans-serif;
+    color: #aaa;
+  }
+
+  .show-clock {
+    font-size: 18px;
+  }
+
+  .white > ul:first-child {
+    width: 72%;
+  }
+
+  .white > ul:last-child {
+    width: 28%;
+  }
+}
+
+@media screen and (min-width: 1023px) {
+  header nav:first-child,
+  header nav:last-child {
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .mobile-logo {
+    display: none;
+  }
+
+  .header-nav-ul:first-child {
+    width: 40%;
+  }
+
+  header nav:first-child ul li {
+    color: #c0b8b8;
+  }
+
+  .header-nav-ul:last-child {
+    width: 25%;
+    margin-left: 35%;
+    color: #131313;
+  }
+
+  .show-clock {
+    display: none;
+  }
+
+  .white > ul:first-child {
+    width: 50%;
+  }
+
+  .white > ul:last-child {
+    width: 5%;
+    margin-left: 45%;
+  }
+
+  .border {
+    border-right: none;
+    padding-left: 25px;
+  }
+}
+
+@media screen and (min-width: 1114px) {
+  .hide-mobile,
+  .hide-clock {
+    display: block;
+  }
+
+  header nav:first-child {
+    display: flex;
+    background-color: black;
+    width: 100%;
+    margin-left: 0;
+    height: 30px;
+    padding: 0 20px 35px 20px;
+  }
+
+  .header-nav-ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav:last-child {
+    position: static;
+    width: 100%;
+    height: 50px;
+    margin-left: 0;
+    padding: 10px 10px 0 0;
+  }
+
+  .min {
+    padding-left: 9px;
+  }
+
+  .header-nav-list {
+    color: rgb(255, 255, 255);
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+  }
+
+  .header-nav-ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  header nav:first-child ul:first-child {
+    width: 35%;
+  }
+
+  header nav:first-child ul:last-child {
+    width: 18%;
+    margin-left: 47%;
+  }
+
+  .header-nav-2-list-hide {
+    display: none;
+  }
+
+  .header-nav-2-list {
+    color: rgb(85, 85, 85);
+    font-size: 14px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+  }
+
+  .remove-center {
+    display: none;
+    width: 0%;
+  }
+
+  .white > ul:first-child {
+    width: 42.5%;
+  }
+
+  .white > ul:first-child li {
+    font-size: 14px;
+    font-family: Shentox, sans-serif;
+    margin-top: -10px;
+    color: #aaa;
+  }
+
+  .white > ul:first-child li:hover {
+    color: black;
+    cursor: pointer;
+  }
+
+  .white > ul:last-child {
+    width: 45.5%;
+    margin-left: 15.5%;
+    margin-top: 10px;
+  }
+
+  .mobile-logo {
+    width: 10%;
+    position: absolute;
+    top: 0;
     height: 80px;
     left: 0;
   }
@@ -212,25 +416,46 @@ header nav:last-child {
     margin-top: 13px;
   }
 
+  .header-nav-2-list-hide {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .show-img {
+    width: 120px;
+  }
+
   .border {
-    border-right: none;
-  }
-}
-
-@media screen and (min-width: 768px) and (max-width: 837px) {
-  header nav:last-child ul:first-child li {
-    font-size: 12px;
+    padding-left: 0;
+    border-left: none;
+    margin-top: -20px;
   }
 
-  .show-clock {
-    font-size: 20px;
+  .opens {
+    font-size: 13px;
+    margin-top: 4px;
+    font-family: Shentox, sans-serif;
   }
 
-  .white > ul:first-child {
-    width: 72%;
+  .btn {
+    margin-top: -4px;
   }
 
-  .white > ul:last-child {
-    width: 28%;
+  .btn button {
+    padding: 8px 15px;
+    background-color: #0cc;
+    text-transform: uppercase;
+    border: none;
+    color: white;
+    font-size: 10px;
+    font-weight: 700;
+    border-radius: 4px;
+  }
+
+  .btn button:hover {
+    background-color: #90c;
   }
 }
