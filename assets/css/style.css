@@ -238,7 +238,7 @@ header nav:last-child {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 837px) {
+@media screen and (min-width: 768px) {
   header nav:last-child ul:first-child li {
     font-size: 14px;
     font-family: Shentox, sans-serif;
@@ -461,93 +461,74 @@ header nav:last-child {
   padding-top: 48px;
 }
 
-.main section {
+.main-section-1 {
   padding: 4px;
   height: 758.562px;
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: repeat(3, 1fr);
-  row-gap: 10px;
 }
 
 .article-cover {
+  background-size: cover;
+  opacity: 1;
+}
+
+.article-cover,
+.article-trigger {
   bottom: 4px;
   left: 4px;
   position: absolute;
   top: 4px;
   right: 4px;
-  background-color: #000;
-  opacity: 0.6;
-  background-position: 50%;
-  z-index: 1;
-  width: 100%;
-  height: 100%;
 }
 
-.tech-article::after {
-  content: "";
-  position: absolute;
-  background: linear-gradient(to right, rgb(20, 20, 20), rgb(14, 12, 12), #000);
-  bottom: 0;
-  display: inline-block;
-  width: 100%;
-  height: 13%;
-  z-index: 1;
-  opacity: 0.7;
+.article-trigger {
+  background: rgba(0, 0, 0, 0.25) url("./../images/image-gradient.png") no-repeat;
+  background-size: 100% 100%;
+  display: block;
+  z-index: 2;
 }
 
 .tech-article {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/spy-796x419.png");
   height: 250px;
   position: relative;
-  background-size: cover;
+  width: 100%;
+}
+
+.article-img-1 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/spy-796x419.png");
+}
+
+.article-img-2 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg");
+}
+
+.article-img-3 {
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/pic-796x417.png");
 }
 
 .insights-article {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/08/bitcoin_today-header_bitcoin_today-796x419.jpg");
-  background-size: cover;
   height: 250px;
   position: relative;
-}
-
-.insights-article::after {
-  content: "";
-  position: absolute;
-  background: linear-gradient(to right, rgb(20, 20, 20), rgb(14, 12, 12), #000);
-  bottom: 0;
-  display: inline-block;
   width: 100%;
-  height: 13%;
-  z-index: 1;
-  opacity: 0.7;
 }
 
 .tech-2-article {
-  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/pic-796x417.png");
-  background-size: cover;
   height: 250px;
   position: relative;
-}
-
-.tech-2-article::after {
-  content: "";
-  position: absolute;
-  background: linear-gradient(to right, rgb(10, 10, 10), rgb(8, 7, 7), rgb(0, 0, 0));
-  bottom: 0;
-  display: inline-block;
   width: 100%;
-  height: 13%;
-  z-index: 1;
-  opacity: 0.7;
 }
 
 .article-headers {
+  position: absolute;
+  margin: 10px;
   bottom: 4px;
   left: 4px;
-  padding: 14px 12px;
-  right: 4px;
-  margin-top: 125px;
+  z-index: 3;
   color: white;
+  cursor: pointer;
+  width: 95%;
 }
 
 .article-header-h5 {
@@ -559,21 +540,26 @@ header nav:last-child {
   font-size: 14px;
 }
 
-.article-header-a {
-  text-decoration: none;
-  color: white;
-  height: auto;
-  width: auto;
+.article-header-a-font {
   font-size: 20px;
   font-family: Avalon, sans-serif;
   z-index: 20;
   font-weight: 700;
 }
 
+.article-header-a {
+  text-decoration: none;
+  color: white;
+  width: 100%;
+}
+
 .article-header-h2 {
-  width: 577px;
+  width: 100%;
   margin-bottom: 5px;
   line-height: 1.1;
+  font-family: Avalon, sans-serif;
+  font-size: 20px;
+  letter-spacing: -0.015em;
 }
 
 .cover-byline {
@@ -582,14 +568,13 @@ header nav:last-child {
   line-height: 16px;
   list-style: none;
   display: flex;
-  width: 577px;
+  width: 100%;
+  font-family: Marquette-Regular, sans-serif;
 }
 
 .icon {
   display: block;
-  background:
-    url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783)
-    no-repeat;
+  background: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat;
   background-size: 1296px 1296px;
   background-position: 1296px 1296px;
   width: 16px;
@@ -605,7 +590,127 @@ header nav:last-child {
   background-position: -912px -912px;
 }
 
-.cover-byline > li {
-  display: inline-block;
+.byline-li {
+  display: flex;
   margin-left: 6px;
+}
+
+.byline-li:first-child {
+  margin-left: 0;
+}
+
+.cover-date {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .main section {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas:
+      "tech-article insights-article"
+      "tech-article tech-2-article";
+  }
+
+  .tech-article {
+    grid-area: tech-article;
+    height: 100%;
+    width: 100%;
+  }
+
+  .insights-article {
+    grid-area: insights-article;
+    height: 100%;
+    width: 100%;
+  }
+
+  .tech-2-article {
+    grid-area: tech-2-article;
+    height: 100%;
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+    padding-top: 4px;
+  }
+
+  .text-container {
+    width: inherit;
+    height: inherit;
+  }
+
+  .article-header-h2 {
+    width: 100%;
+    margin-bottom: 5px;
+    line-height: 1.1;
+    font-family: Avalon, sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.015em;
+  }
+
+  .article-header-h2-1 {
+    font-size: 32px;
+  }
+
+  .article-headers {
+    padding: 20px 20px 20px 5px;
+  }
+
+  .cover-gradient {
+    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png") no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    bottom: 4px;
+    left: 4px;
+    mix-blend-mode: overlay;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    z-index: 4;
+    opacity: 0.9;
+  }
+
+  .cover-gradient:hover {
+    opacity: 0.6;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .cover-logo {
+    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
+    left: 24px;
+    max-width: 50%;
+    height: 100%;
+    top: 24px;
+    position: absolute;
+    color: #fff;
+    right: 24px;
+    z-index: 2;
+  }
+
+  .article-header-h2 {
+    font-size: 28px;
+  }
+
+  .article-header-h2-1 {
+    font-size: 58px;
+  }
+
+  .main section {
+    height: 480px;
+  }
+
+  .cover-date {
+    display: block;
+    position: absolute;
+    right: 20px;
+    color: white;
+    top: 20px;
+    z-index: 4;
+    height: 12px;
+    font-size: 14px;
+  }
 }
