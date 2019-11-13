@@ -273,7 +273,7 @@ header nav:last-child {
   color: #f42;
 }
 
-.latest h2 a {
+.latest-h2-a {
   width: 100%;
   font-family: Avalon, sans-serif;
   font-size: 27px;
@@ -281,8 +281,8 @@ header nav:last-child {
   text-decoration: none;
 }
 
-.latest h2::after {
-  background-image: url('../images/arrow.svg');
+.latest-h2::after {
+  background-image: url("../images/arrow.svg");
   background-size: 16px 16px;
   content: "";
   display: inline-block;
@@ -371,6 +371,133 @@ header nav:last-child {
 
 .small-p a:hover {
   color: #000;
+}
+
+.latest-funding-header-ul {
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Avalon, sans-serif;
+  font-size: 14px;
+  color: #f42;
+}
+
+.funding-list {
+  margin: 10px 0;
+}
+
+.no-li-display {
+  display: none;
+}
+
+.latest-funding-article-1 {
+  margin-top: 40px;
+}
+
+.latest-funding-article-1-div {
+  position: relative;
+}
+
+.card-company-image {
+  width: 60px;
+  height: 60px;
+  margin: 10.6666666667px;
+  position: absolute;
+}
+
+.article-1-01 {
+  width: 100%;
+  height: 40px;
+  background-color: red;
+  padding-top: 10.6667px;
+  padding-left: 90px;
+  color: white;
+  font-family: Marquette, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.article-1-02 {
+  width: 100%;
+  height: 60px;
+  background: rgba(255, 68, 34, 0.08);
+}
+
+.article-1-02 h4 {
+  padding-top: 10.6667px;
+  padding-left: 90px;
+  color: rgb(12, 7, 7);
+  font-family: Marquette, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.article-1-02 h5 {
+  padding-top: 5px;
+  padding-left: 90px;
+  font-family: Shentox, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  opacity: 0.4;
+}
+
+.article-1-03 {
+  list-style-type: none;
+  text-decoration: none;
+  background: rgba(248, 228, 225, 0.08);
+  border-bottom: 3px solid rgba(240, 94, 69, 0.08);
+}
+
+.article-1-03 li {
+  position: relative;
+  padding: 10px;
+}
+
+.article-1-03 li span {
+  margin-left: 30px;
+  color: rgb(85, 85, 85);
+  font-weight: 400;
+  font-size: 13px;
+  font-family: Marquette, sans-serif;
+}
+
+.icon {
+  background-size: 1296px 1296px;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-1 {
+  background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783") no-repeat;
+  background-position-x: -976px;
+  background-position-y: -976px;
+  position: absolute;
+}
+
+.icon-2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783);
+  background-position-x: -48px;
+  background-position-y: -48px;
+  position: absolute;
+}
+
+.article-1-04 {
+  list-style-type: none;
+  text-decoration: none;
+  padding: 10px;
+  background: rgba(248, 228, 225, 0.08);
+}
+
+.article-1-04 li a {
+  text-decoration: none;
+  color: #555;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: Marquette, sans-serif;
+}
+
+.no-article-display {
+  display: none;
 }
 
 /* MEDIA QUERIES */
@@ -505,26 +632,6 @@ header nav:last-child {
 
   .border {
     border-right: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header nav:last-child ul:first-child li {
-    font-size: 14px;
-    font-family: Shentox, sans-serif;
-    color: #aaa;
-  }
-
-  .show-clock {
-    font-size: 18px;
-  }
-
-  .white > ul:first-child {
-    width: 72%;
-  }
-
-  .white > ul:last-child {
-    width: 28%;
   }
 }
 
@@ -727,6 +834,24 @@ header nav:last-child {
 }
 
 @media screen and (min-width: 768px) {
+  header nav:last-child ul:first-child li {
+    font-size: 14px;
+    font-family: Shentox, sans-serif;
+    color: #aaa;
+  }
+
+  .show-clock {
+    font-size: 18px;
+  }
+
+  .white > ul:first-child {
+    width: 72%;
+  }
+
+  .white > ul:last-child {
+    width: 28%;
+  }
+
   .main-section-1 {
     height: 300px;
     display: grid;
@@ -825,6 +950,30 @@ header nav:last-child {
   .latest-article > div {
     margin-left: 0;
   }
+
+  .latest-funding-header-ul {
+    display: flex;
+    width: 60%;
+    margin-top: -8px;
+  }
+
+  .funding-list {
+    border-right: 1px solid red;
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  .no-border {
+    border-right: none;
+  }
+
+  .grid-article-view {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1025px) {
@@ -864,7 +1013,7 @@ header nav:last-child {
   }
 
   .latest {
-    width: 87%;
+    width: 95%;
   }
 
   .latest-section {
@@ -884,5 +1033,53 @@ header nav:last-child {
 
   .article-inner {
     width: 100%;
+  }
+
+  .latest-funding-header {
+    display: flex;
+    margin-top: 90px;
+  }
+
+  .latest-funding-header h2 {
+    width: 70%;
+  }
+
+  .latest-funding-header-ul {
+    width: 30%;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  .funding-list {
+    border-right: 1px solid red;
+    height: 20px;
+    font-size: 14px;
+    padding: 0 5px;
+    margin-left: 5px;
+  }
+
+  .no-border {
+    border-right: none;
+  }
+
+  .no-li-display {
+    display: none;
+  }
+
+  .grid-article-view {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    width: 100%;
+  }
+
+  .no-article-display {
+    display: block;
+  }
+
+  .article-1-02 h5 {
+    font-size: 12px;
+    font-weight: 200;
   }
 }
