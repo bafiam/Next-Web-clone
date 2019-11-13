@@ -522,7 +522,7 @@ header nav:last-child {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1182px) {
+@media screen and (min-width: 770px) and (max-width: 1182px) {
   .hide-mobile,
   .hide-clock {
     display: block;
@@ -610,11 +610,11 @@ header nav:last-child {
   }
 
   .white > ul:first-child {
-    width: 75%;
+    width: 72.5%;
   }
 
   .white > ul:last-child {
-    width: 25%;
+    width: 27.5%;
   }
 
   .mobile-logo {
@@ -632,6 +632,151 @@ header nav:last-child {
 
   .border {
     border-right: none;
+  }
+}
+
+@media screen and (min-width: 828px) {
+  header nav:last-child ul:first-child li {
+    font-size: 14px;
+    font-family: Shentox, sans-serif;
+    color: #aaa;
+  }
+
+  .show-clock {
+    font-size: 18px;
+  }
+
+  .white > ul:first-child {
+    width: 72%;
+  }
+
+  .white > ul:last-child {
+    width: 28%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main-section-1 {
+    height: 300px;
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: repeat(2, 50%);
+    grid-template-areas:
+      "tech-article insights-article"
+      "tech-article tech-2-article";
+  }
+
+  .tech-article {
+    grid-area: tech-article;
+    height: 100%;
+    width: 100%;
+  }
+
+  .insights-article {
+    grid-area: insights-article;
+    height: 100%;
+    width: 100%;
+  }
+
+  .tech-2-article {
+    grid-area: tech-2-article;
+    height: 100%;
+    width: 100%;
+  }
+
+  .main {
+    width: 100%;
+    padding-top: 4px;
+  }
+
+  .text-container {
+    width: inherit;
+    height: inherit;
+  }
+
+  .article-header-h2 {
+    width: 100%;
+    margin-bottom: 5px;
+    line-height: 1.1;
+    font-family: Avalon, sans-serif;
+    font-size: 18px;
+    letter-spacing: -0.015em;
+  }
+
+  .article-header-h2-1 {
+    font-size: 32px;
+  }
+
+  .article-headers {
+    padding: 20px 20px 20px 5px;
+  }
+
+  .cover-gradient {
+    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png") no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    bottom: 4px;
+    left: 4px;
+    mix-blend-mode: overlay;
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    z-index: 4;
+    opacity: 0.9;
+  }
+
+  .cover-gradient:hover {
+    opacity: 0.6;
+  }
+
+  .latest {
+    width: 94%;
+  }
+
+  .latest-section {
+    display: grid;
+    grid-template-rows: repeat(3, 230px);
+    grid-template-columns: repeat(3, 32%);
+    row-gap: 10px;
+    column-gap: 20px;
+  }
+
+  .latest-article {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .latest-article > a {
+    width: 100%;
+    height: 130px;
+  }
+
+  .latest-article > div {
+    margin-left: 0;
+  }
+
+  .latest-funding-header-ul {
+    display: flex;
+    width: 60%;
+    margin-top: -8px;
+  }
+
+  .funding-list {
+    border-right: 1px solid red;
+    padding: 0 10px;
+    font-size: 13px;
+  }
+
+  .no-border {
+    border-right: none;
+  }
+
+  .grid-article-view {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    width: 100%;
   }
 }
 
@@ -676,6 +821,114 @@ header nav:last-child {
   .border {
     border-right: none;
     padding-left: 25px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .cover-logo {
+    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
+    left: 24px;
+    max-width: 50%;
+    height: 100%;
+    top: 24px;
+    position: absolute;
+    color: #fff;
+    right: 24px;
+    z-index: 2;
+  }
+
+  .article-header-h2 {
+    font-size: 28px;
+  }
+
+  .article-header-h2-1 {
+    font-size: 58px;
+  }
+
+  .main section {
+    height: 480px;
+  }
+
+  .cover-date {
+    display: block;
+    position: absolute;
+    right: 20px;
+    color: white;
+    top: 20px;
+    z-index: 4;
+    height: 12px;
+    font-size: 14px;
+  }
+
+  .latest {
+    width: 87%;
+  }
+
+  .latest-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .latest-article {
+    width: 23.5%;
+    margin-bottom: 25px;
+  }
+
+  .a-tag {
+    font-size: 15px;
+  }
+
+  .article-inner {
+    width: 100%;
+  }
+
+  .latest-funding-header {
+    display: flex;
+    margin-top: 90px;
+  }
+
+  .latest-funding-header h2 {
+    width: 70%;
+  }
+
+  .latest-funding-header-ul {
+    width: 30%;
+    text-align: center;
+    margin-top: 3px;
+  }
+
+  .funding-list {
+    border-right: 1px solid red;
+    height: 20px;
+    font-size: 14px;
+    padding: 0 5px;
+    margin-left: 5px;
+  }
+
+  .no-border {
+    border-right: none;
+  }
+
+  .no-li-display {
+    display: none;
+  }
+
+  .grid-article-view {
+    display: grid;
+    grid-template-columns: repeat(4, 23.5%);
+    grid-template-rows: auto;
+    column-gap: 20px;
+    width: 100%;
+  }
+
+  .no-article-display {
+    display: block;
+  }
+
+  .article-1-02 h5 {
+    font-size: 12px;
+    font-weight: 200;
   }
 }
 
@@ -830,256 +1083,5 @@ header nav:last-child {
 
   .btn button:hover {
     background-color: #90c;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  header nav:last-child ul:first-child li {
-    font-size: 14px;
-    font-family: Shentox, sans-serif;
-    color: #aaa;
-  }
-
-  .show-clock {
-    font-size: 18px;
-  }
-
-  .white > ul:first-child {
-    width: 72%;
-  }
-
-  .white > ul:last-child {
-    width: 28%;
-  }
-
-  .main-section-1 {
-    height: 300px;
-    display: grid;
-    grid-template-columns: 65% 35%;
-    grid-template-rows: repeat(2, 50%);
-    grid-template-areas:
-      "tech-article insights-article"
-      "tech-article tech-2-article";
-  }
-
-  .tech-article {
-    grid-area: tech-article;
-    height: 100%;
-    width: 100%;
-  }
-
-  .insights-article {
-    grid-area: insights-article;
-    height: 100%;
-    width: 100%;
-  }
-
-  .tech-2-article {
-    grid-area: tech-2-article;
-    height: 100%;
-    width: 100%;
-  }
-
-  .main {
-    width: 100%;
-    padding-top: 4px;
-  }
-
-  .text-container {
-    width: inherit;
-    height: inherit;
-  }
-
-  .article-header-h2 {
-    width: 100%;
-    margin-bottom: 5px;
-    line-height: 1.1;
-    font-family: Avalon, sans-serif;
-    font-size: 18px;
-    letter-spacing: -0.015em;
-  }
-
-  .article-header-h2-1 {
-    font-size: 32px;
-  }
-
-  .article-headers {
-    padding: 20px 20px 20px 5px;
-  }
-
-  .cover-gradient {
-    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/cover-gradient.png") no-repeat;
-    background-position: 0 0;
-    background-size: cover;
-    bottom: 4px;
-    left: 4px;
-    mix-blend-mode: overlay;
-    position: absolute;
-    right: 4px;
-    top: 4px;
-    z-index: 4;
-    opacity: 0.9;
-  }
-
-  .cover-gradient:hover {
-    opacity: 0.6;
-  }
-
-  .latest {
-    width: 94%;
-  }
-
-  .latest-section {
-    display: grid;
-    grid-template-rows: repeat(3, 230px);
-    grid-template-columns: repeat(3, 32%);
-    row-gap: 10px;
-    column-gap: 20px;
-  }
-
-  .latest-article {
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .latest-article > a {
-    width: 100%;
-    height: 130px;
-  }
-
-  .latest-article > div {
-    margin-left: 0;
-  }
-
-  .latest-funding-header-ul {
-    display: flex;
-    width: 60%;
-    margin-top: -8px;
-  }
-
-  .funding-list {
-    border-right: 1px solid red;
-    padding: 0 10px;
-    font-size: 13px;
-  }
-
-  .no-border {
-    border-right: none;
-  }
-
-  .grid-article-view {
-    display: grid;
-    grid-template-columns: repeat(3, 32%);
-    grid-template-rows: auto;
-    column-gap: 20px;
-    width: 100%;
-  }
-}
-
-@media screen and (min-width: 1025px) {
-  .cover-logo {
-    background: transparent url("https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg") no-repeat;
-    left: 24px;
-    max-width: 50%;
-    height: 100%;
-    top: 24px;
-    position: absolute;
-    color: #fff;
-    right: 24px;
-    z-index: 2;
-  }
-
-  .article-header-h2 {
-    font-size: 28px;
-  }
-
-  .article-header-h2-1 {
-    font-size: 58px;
-  }
-
-  .main section {
-    height: 480px;
-  }
-
-  .cover-date {
-    display: block;
-    position: absolute;
-    right: 20px;
-    color: white;
-    top: 20px;
-    z-index: 4;
-    height: 12px;
-    font-size: 14px;
-  }
-
-  .latest {
-    width: 95%;
-  }
-
-  .latest-section {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-
-  .latest-article {
-    width: 23.5%;
-    margin-bottom: 25px;
-  }
-
-  .a-tag {
-    font-size: 15px;
-  }
-
-  .article-inner {
-    width: 100%;
-  }
-
-  .latest-funding-header {
-    display: flex;
-    margin-top: 90px;
-  }
-
-  .latest-funding-header h2 {
-    width: 70%;
-  }
-
-  .latest-funding-header-ul {
-    width: 30%;
-    text-align: center;
-    margin-top: 3px;
-  }
-
-  .funding-list {
-    border-right: 1px solid red;
-    height: 20px;
-    font-size: 14px;
-    padding: 0 5px;
-    margin-left: 5px;
-  }
-
-  .no-border {
-    border-right: none;
-  }
-
-  .no-li-display {
-    display: none;
-  }
-
-  .grid-article-view {
-    display: grid;
-    grid-template-columns: repeat(4, 23.5%);
-    grid-template-rows: auto;
-    column-gap: 20px;
-    width: 100%;
-  }
-
-  .no-article-display {
-    display: block;
-  }
-
-  .article-1-02 h5 {
-    font-size: 12px;
-    font-weight: 200;
   }
 }
