@@ -524,6 +524,62 @@ header nav:last-child {
   background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Facebook-Pay-368x276.jpg);
 }
 
+.gear-pic-1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/MacBook-Pro-2019-hed-2-368x276.jpg);
+}
+
+.gear-pic-2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Moto-Razr-Leak.jpg);
+}
+
+.tech-pic-1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2016/08/SAFARI-368x276.jpg);
+}
+
+.tech-pic-2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Copy-of-Copy-of-....png);
+}
+
+.creative-pic-1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Giphy-Arcade-368x276.jpg);
+}
+
+.creative-pic-2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/09/Annotation-2019-09-19-121214.png);
+}
+
+.podium-pic-1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Untitled-design5-368x276.png);
+}
+
+.podium-pic-2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Untitled-design4.png);
+}
+
+.insights-pic-1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/09/switzerland-blockchain-banks-cryptocurrency-regulation-guidelines2-368x276.jpg);
+}
+
+.insights-pic-2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Untitled-design-75.jpg);
+}
+
+.launch-pic-1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/10/Amazon-Prime-Fresh-delivery-hed-368x276.jpg);
+}
+
+.launch-pic-2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2012/12/dotcommansion-730x276.jpg);
+}
+
+.distract-pic-1 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/07/trump1200-368x276.png);
+}
+
+.distract-pic-2 {
+  background-image: url(https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/11/Untitled-design-73.jpg);
+}
+
 .dark-gradient {
   background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/image-gradient.png) no-repeat;
   background-size: 100% 100%;
@@ -638,6 +694,107 @@ header nav:last-child {
   font-weight: bold;
   display: inline-block;
   width: 1em;
+}
+
+.latest-deals-header-h4 {
+  font-family: Avalon, sans-serif;
+  font-size: 16px;
+  color: #f42;
+  text-decoration: none;
+  margin-top: 6px;
+}
+
+.latest-deal-header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.latest-article-img {
+  background-size: cover;
+  background-position: 50%;
+  height: 75px;
+  width: 80px;
+}
+
+.latest-article-img-1 {
+  background-image: url(https://cdnp0.stackassets.com/0bcaf472e484efc5812ba81caff99e8d92b3e6e9/store/a608033f5bd5c0926a52360990ea5bd8a7241593db592e096d16df200727/product_30218_product_shots4.jpg);
+}
+
+.latest-article-img-2 {
+  background-image: url(https://cdnp0.stackassets.com/72ec5f6be82aa335c0705e20589a5f323ebb7cbb/store/627accf6e5520cc7b240d6376619f1ade8d7b9cad265639ffc6acbe89a96/sale_20564_primary_image.jpg);
+}
+
+.latest-article-img-3 {
+  background-image: url(https://cdnp2.stackassets.com/0501592eb42457e9526cb373a597ff770f3e49e0/store/b37d3fc9a345f3887049b6df30d1763dd6ef2a81b4f4f7b8114f87884c45/sale_20542_primary_image.jpg);
+}
+
+.latest-article-img-4 {
+  background-image: url(https://cdnp3.stackassets.com/0b66b73d83e604739fb66b76e5adfe0c9c099893/store/e1912f57480fd00299cf9de847d4366d225b2154f06e4cb0dcda9c835a5a/product_31049_product_shots3.jpg);
+}
+
+.latest-article-img-5 {
+  background-image: url(https://cdnp2.stackassets.com/ba1c66a49ee53837ec2bf1ab7cf2ff92ad895edf/store/cf2c6ccb8d49eeb66f2ae373c4f4a232ca653b27de02f56acd2f69aa7fbc/product_27619_product_shots1.jpg);
+}
+
+.latest-article-img-6 {
+  background-image: url(https://cdnp0.stackassets.com/8eb5269781b3688000f7815db26850ae9330f6cf/store/dd67fc20e18ba6950ad4709353cb2303e8251066b790da99035c211e21f4/sale_15499_primary_image.jpg);
+}
+
+.latest-article-img-7 {
+  background-image: url(https://cdnp1.stackassets.com/b308bc79c3ab77999bf45188fae0a4f5b2e259a6/store/0eeb94683528836f896f7d52a53ba0f1f3e6ab58a9df554e357779a8c649/sale_15388_primary_image.jpg);
+}
+
+.latest-article-img-8 {
+  background-image: url(https://cdnp1.stackassets.com/9ebce4f78fd91b935fd2da0429b524aff90cb32e/store/36afff99f778f5bd71fc097eddfe9c48a5a00bbc950106c5fc02486645f7/sale_18440_primary_image.jpg);
+}
+
+.latest-deals-article-1 {
+  margin-top: 20px;
+  display: flex;
+  width: 100%;
+}
+
+.article-deal-content {
+  padding-left: 20px;
+  width: 80%;
+}
+
+.content-ul {
+  list-style-type: none;
+  margin-top: 10px;
+  display: flex;
+  font-family: Marquette-Regular, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.content-li-1 {
+  text-decoration: line-through;
+  margin-right: 7px;
+  color: #aaa;
+}
+
+.content-li-2 {
+  color: #555;
+}
+
+.article-deal-content-h4 {
+  color: rgb(0, 0, 0);
+  font-family: Marquette-Regular, sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  padding-top: 5px;
+}
+
+.article-deal-content-h4 a {
+  text-decoration: none;
+}
+
+.latest-deals {
+  width: 92%;
+  margin: 0 auto;
+  height: inherit;
 }
 
 /* MEDIA QUERIES */
@@ -918,6 +1075,47 @@ header nav:last-child {
     column-gap: 20px;
     width: 100%;
   }
+
+  .big-articles {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    column-gap: 20px;
+    row-gap: 20px;
+  }
+
+  .bg-latest-p {
+    width: 70%;
+  }
+
+  .grid-latest-deals {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    grid-template-rows: auto;
+    column-gap: 20px;
+  }
+
+  .latest-deals-article-1 {
+    display: block;
+  }
+
+  .latest-article-img {
+    width: 100%;
+    height: 150px;
+  }
+
+  .article-deal-content {
+    padding-left: 0;
+    width: 100%;
+  }
+
+  .article-deal-content-h4 {
+    font-size: 13px;
+    font-weight: 700;
+  }
+
+  .content-ul {
+    font-size: 12px;
+  }
 }
 
 @media screen and (min-width: 1023px) {
@@ -1069,6 +1267,14 @@ header nav:last-child {
   .article-1-02 h5 {
     font-size: 12px;
     font-weight: 200;
+  }
+
+  .big-articles {
+    display: grid;
+    grid-template-columns: repeat(3, 32%);
+    column-gap: 20px;
+    row-gap: 70px;
+    width: 85%;
   }
 }
 
