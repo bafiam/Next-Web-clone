@@ -19,7 +19,7 @@ This project consists of replicating the [The Next Web](https://thenextweb.com/)
 
 ## Github Pages Link
 
-Under construction
+<https://bafiam.github.io/Next-Web-clone/>
 
 ## License
 
