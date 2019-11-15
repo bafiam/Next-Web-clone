@@ -1446,6 +1446,10 @@ footer {
     text-decoration: underline;
     color: red;
   }
+
+  .main-section-1 {
+    height: 500px;
+  }
 }
 
 @media screen and (min-width: 1114px) {
