@@ -509,15 +509,16 @@ header nav:last-child {
 .bg-articles {
   width: 100%;
   height: 600px;
-  margin-bottom: 150px;
+  margin-bottom: 90px;
 }
 
 .bg-image {
-  height: 350px;
+  height: 280px;
   margin-top: 10px;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  background-size: 100% 100%;
 }
 
 .facebook {
@@ -753,6 +754,11 @@ header nav:last-child {
   margin-top: 20px;
   display: flex;
   width: 100%;
+  position: relative;
+}
+
+.story-dealDiscount {
+  display: none;
 }
 
 .article-deal-content {
@@ -1116,6 +1122,34 @@ header nav:last-child {
   .content-ul {
     font-size: 12px;
   }
+
+  .story-dealDiscount {
+    background-image: url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/deals-ribbon.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: #000;
+    display: block;
+    height: 80px;
+    overflow: hidden;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80px;
+    z-index: 10;
+  }
+
+  .story-dealDiscount div {
+    transform: rotate(45deg);
+    font-size: 14px;
+    font-weight: 700;
+    left: 8px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 20px;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 1023px) {
@@ -1275,6 +1309,18 @@ header nav:last-child {
     column-gap: 20px;
     row-gap: 70px;
     width: 85%;
+  }
+
+  .latest-deals {
+    margin-top: 1870px;
+    width: 85%;
+  }
+
+  .grid-latest-deals {
+    display: grid;
+    grid-template-columns: repeat(4, 24%);
+    grid-template-rows: auto;
+    column-gap: 20px;
   }
 }
 
