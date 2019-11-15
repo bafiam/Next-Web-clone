@@ -44,10 +44,14 @@ header nav ul li {
 
 .max {
   width: 70%;
+}
+
+.max a {
   font-family: Shentox, sans-serif;
   color: #f42;
   font-size: 22px;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .small {
@@ -804,14 +808,15 @@ header nav:last-child {
 }
 
 footer {
-  height: 287px;
-  margin-top: 200px;
+  margin-top: 130px;
+  width: 100%;
 }
 
 .upper-footer {
   height: 161px;
   background: #131313;
   padding: 2.5em 0;
+  width: 100%;
 }
 
 .lower-footer {
@@ -820,20 +825,25 @@ footer {
   color: #aaa;
   font-size: 13px;
   padding: 2.5em 0;
+  width: 100%;
 }
 
 .footer-lists,
 .wrapper {
-  margin: 0 auto;
   width: 100%;
-  padding: 0 480px;
 }
 
 .upper-footer-social-list,
 .footer-links-menu {
   list-style-type: none;
   display: flex;
-  margin: 10px 0;
+  margin: 10px auto;
+  width: 328px;
+}
+
+.footer-links-menu {
+  margin-top: 25px;
+  width: 290px;
 }
 
 .footer-links-social {
@@ -886,16 +896,11 @@ footer {
   font-family: Shentox, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 24px;
   margin: 0 4px;
   color: #aaa;
   text-decoration: none;
-}
-
-.footer-links-menu {
-  margin-top: 20px;
-  margin-left: 10px;
 }
 
 .wrapper span {
@@ -928,11 +933,15 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+
+  .show-clock a {
     font-family: Shentox, sans-serif;
     color: #f42;
     font-size: 19px;
     font-weight: 700;
     margin-right: 10px;
+    text-decoration: none;
   }
 }
 
@@ -957,10 +966,11 @@ footer {
     padding: 0 20px;
   }
 
-  header nav:last-child ul:first-child li {
+  header nav:last-child ul:first-child li a {
     font-size: 14px;
     font-family: Shentox, sans-serif;
     color: #aaa;
+    text-decoration: none;;
   }
 
   header nav:last-child {
@@ -989,6 +999,7 @@ footer {
     font-weight: 500;
     line-height: 32px;
     text-align: center;
+    text-decoration: none;
   }
 
   .header-nav-ul {
@@ -1050,10 +1061,11 @@ footer {
 }
 
 @media screen and (min-width: 828px) {
-  header nav:last-child ul:first-child li {
+  header nav:last-child ul:first-child li a {
     font-size: 14px;
     font-family: Shentox, sans-serif;
     color: #aaa;
+    text-decoration: none;
   }
 
   .show-clock {
@@ -1490,6 +1502,7 @@ footer {
     font-weight: 500;
     line-height: 32px;
     text-align: center;
+    text-decoration: none;
   }
 
   .header-nav-ul {
@@ -1580,10 +1593,11 @@ footer {
     margin-top: -20px;
   }
 
-  .opens {
+  .opens a {
     font-size: 13px;
-    margin-top: 4px;
     font-family: Shentox, sans-serif;
+    text-decoration: none;
+    color: #aaa;
   }
 
   .btn {
