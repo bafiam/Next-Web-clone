@@ -803,6 +803,117 @@ header nav:last-child {
   height: inherit;
 }
 
+footer {
+  height: 287px;
+  margin-top: 200px;
+}
+
+.upper-footer {
+  height: 161px;
+  background: #131313;
+  padding: 2.5em 0;
+}
+
+.lower-footer {
+  height: 122px;
+  background: #000;
+  color: #aaa;
+  font-size: 13px;
+  padding: 2.5em 0;
+}
+
+.footer-lists,
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 480px;
+}
+
+.upper-footer-social-list,
+.footer-links-menu {
+  list-style-type: none;
+  display: flex;
+  margin: 10px 0;
+}
+
+.footer-links-social {
+  background: #333;
+  border-radius: 50%;
+  display: block;
+  height: 40px;
+  padding: 12px;
+  text-align: center;
+  width: 40px;
+  margin-right: 8px;
+}
+
+.icon {
+  background: transparent url(https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/icons-sprite.svg?1520429355783) no-repeat;
+  background-size: 1296px 1296px;
+  height: 16px;
+  width: 16px;
+}
+
+.fb-icon {
+  background-position: -272px -272px;
+}
+
+.twitter-icon {
+  background-position: -1024px -1024px;
+}
+
+.youtube-icon {
+  background-position: -1280px -1280px;
+}
+
+.instagram-icon {
+  background-position: -416px -416px;
+}
+
+.pinterest-icon {
+  background-position: -672px -672px;
+}
+
+.rss-icon {
+  background-position: -816px -816px;
+}
+
+.mail-icon {
+  background-position: -576px -576px;
+}
+
+.footer-menu {
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-size: 13px;
+  line-height: 24px;
+  margin: 0 4px;
+  color: #aaa;
+  text-decoration: none;
+}
+
+.footer-links-menu {
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.wrapper span {
+  display: block;
+  text-align: center;
+  margin-bottom: 3px;
+}
+
+.legal-logoTNW {
+  display: inline-block;
+  height: 9px;
+  margin-right: 1px;
+}
+
+.b-love {
+  color: #f42;
+}
+
 /* MEDIA QUERIES */
 
 @media screen and (min-width: 480px) {
@@ -1131,7 +1242,6 @@ header nav:last-child {
     display: block;
     height: 80px;
     overflow: hidden;
-    pointer-events: none;
     position: absolute;
     right: 0;
     top: 0;
@@ -1321,6 +1431,24 @@ header nav:last-child {
     grid-template-columns: repeat(4, 24%);
     grid-template-rows: auto;
     column-gap: 20px;
+  }
+
+  .article-deal-content-h4 {
+    font-size: 16px;
+    font-weight: 900;
+  }
+
+  .content-ul {
+    font-size: 16px;
+  }
+
+  .content-li-1 {
+    font-size: 13px;
+  }
+
+  .article-deal-content-h4:hover {
+    text-decoration: underline;
+    color: red;
   }
 }
 
