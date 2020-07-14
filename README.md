@@ -10,7 +10,7 @@ This project consists of replicating the [The Next Web](https://thenextweb.com/)
 
 <https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design>
 
-## Prerequisites
+## Run locally
 
 1. Clone the project- git clone <https://github.com/bafiam/Next-Web-clone.git>
 2. Cd Next-Web-clone
